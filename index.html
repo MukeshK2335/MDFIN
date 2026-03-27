@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD FIN ASSOCIATES | Financial Solutions</title>
+    <link rel="icon" type="image/jpeg" href="/Companylogo.jpeg">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A2342',
+                        secondary: '#CBA135',
+                        accent: '#FFD700',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-gold-gradient {
+            background: linear-gradient(to right, #CBA135, #D4AF37, #FFD700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-white">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-gradient-to-b from-primary to-transparent py-5">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center space-x-3 cursor-pointer hover:opacity-90 transition-opacity duration-300">
+                    <img src="/Companylogo.jpeg" alt="Company Logo" class="w-12 h-12 rounded-lg shadow-lg">
+                    <div>
+                        <h1 class="text-white font-black text-lg sm:text-xl leading-tight tracking-tight">MD FIN ASSOCIATES</h1>
+                        <p class="text-secondary text-xs font-semibold">Financial Solutions</p>
+                    </div>
+                </a>
+
+                <div class="hidden lg:flex items-center space-x-2">
+                    <a href="index.html" class="px-5 py-2.5 rounded-lg transition-all duration-300 font-semibold text-sm bg-secondary text-primary shadow-lg">Home</a>
+                    <a href="about.html" class="px-5 py-2.5 rounded-lg transition-all duration-300 font-semibold text-sm text-white hover:bg-white/10 hover:text-secondary">About</a>
+                    <a href="services.html" class="px-5 py-2.5 rounded-lg transition-all duration-300 font-semibold text-sm text-white hover:bg-white/10 hover:text-secondary">Services</a>
+                    <a href="industries.html" class="px-5 py-2.5 rounded-lg transition-all duration-300 font-semibold text-sm text-white hover:bg-white/10 hover:text-secondary">Industries</a>
+                    <a href="testimonials.html" class="px-5 py-2.5 rounded-lg transition-all duration-300 font-semibold text-sm text-white hover:bg-white/10 hover:text-secondary">Testimonials</a>
+                    <!-- <a href="blog.html" class="px-5 py-2.5 rounded-lg transition-all duration-300 font-semibold text-sm text-white hover:bg-white/10 hover:text-secondary">Blog</a> -->
+                    <a href="contact.html" class="px-5 py-2.5 rounded-lg transition-all duration-300 font-semibold text-sm text-white hover:bg-white/10 hover:text-secondary">Contact</a>
+                </div>
+
+                <button id="mobile-menu-btn" class="lg:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors">
+                    <i data-lucide="menu" size="28"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-4 space-y-2 bg-primary/95 -mx-4 px-4 py-4 rounded-b-xl">
+                <a href="index.html" class="block w-full text-left px-4 py-3 rounded-lg transition-all duration-300 font-semibold bg-secondary text-primary">Home</a>
+                <a href="about.html" class="block w-full text-left px-4 py-3 rounded-lg transition-all duration-300 font-semibold text-white hover:bg-white/10">About</a>
+                <a href="services.html" class="block w-full text-left px-4 py-3 rounded-lg transition-all duration-300 font-semibold text-white hover:bg-white/10">Services</a>
+                <a href="industries.html" class="block w-full text-left px-4 py-3 rounded-lg transition-all duration-300 font-semibold text-white hover:bg-white/10">Industries</a>
+                <a href="testimonials.html" class="block w-full text-left px-4 py-3 rounded-lg transition-all duration-300 font-semibold text-white hover:bg-white/10">Testimonials</a>
+                <!-- <a href="blog.html" class="block w-full text-left px-4 py-3 rounded-lg transition-all duration-300 font-semibold text-white hover:bg-white/10">Blog</a> -->
+                <a href="contact.html" class="block w-full text-left px-4 py-3 rounded-lg transition-all duration-300 font-semibold text-white hover:bg-white/10">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1920')">
+                <div class="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/70"></div>
+            </div>
+
+            <div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div id="hero-content" class="transform transition-all duration-1000 translate-y-10 opacity-0">
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight tracking-tight">
+                        Simplifying Finance.<br>
+                        <span class="bg-gold-gradient">Empowering Growth.</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
+                        Expert tax consultancy and business solutions with over 15 years of trusted experience
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-16">
+                        <a href="contact.html" class="group flex items-center justify-center space-x-3 bg-gradient-to-br from-secondary to-accent text-primary px-8 py-4 rounded-xl font-black text-lg shadow-xl hover:shadow-secondary/50 transition-all duration-300 transform hover:scale-105 active:scale-95 border-2 border-white/20">
+                            <span>Book Consultation</span>
+                            <i data-lucide="arrow-right" class="group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="services.html" class="px-8 py-4 rounded-xl font-black text-lg border-2 border-secondary text-secondary hover:bg-secondary hover:text-primary transition-all duration-300">
+                            Explore Services
+                        </a>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                        <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-secondary/30 transform transition-all duration-700 hover:bg-white/20 hover:border-secondary">
+                            <i data-lucide="award" class="w-10 h-10 text-secondary mx-auto mb-3"></i>
+                            <div class="text-4xl font-black text-white mb-2 tracking-tight">15+</div>
+                            <div class="text-gray-200 font-semibold">Years Experience</div>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-secondary/30 transform transition-all duration-700 hover:bg-white/20 hover:border-secondary">
+                            <i data-lucide="users" class="w-10 h-10 text-secondary mx-auto mb-3"></i>
+                            <div class="text-4xl font-black text-white mb-2 tracking-tight">500+</div>
+                            <div class="text-gray-200 font-semibold">Clients Served</div>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-secondary/30 transform transition-all duration-700 hover:bg-white/20 hover:border-secondary">
+                            <i data-lucide="check-circle" class="w-10 h-10 text-secondary mx-auto mb-3"></i>
+                            <div class="text-4xl font-black text-white mb-2 tracking-tight">100%</div>
+                            <div class="text-gray-200 font-semibold">Compliance Rate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <i data-lucide="trending-up" class="text-secondary" size="32"></i>
+            </div>
+        </section>
+
+        <!-- Welcome Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-5xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl font-black text-primary text-center mb-12 tracking-tight">
+                        Welcome to <span class="bg-gold-gradient">MD FIN Associates</span>
+                    </h2>
+                    <div class="text-lg text-gray-700 leading-relaxed text-justify space-y-6">
+                        <p>At MD Fin Associates, we simplify finance and tax processes with precision and expertise. With over 15 years of experience, we provide personalized, reliable, and efficient financial consultancy services that empower your business growth. From compliance and business registration to tax planning and insurance consulting, we deliver professional solutions that save your time and drive success.</p>
+                        <p>Our commitment to excellence has helped over 1,000 businesses navigate the complex landscape of taxation, regulatory compliance, and financial management. We understand that every business is unique, which is why we tailor our services to meet your specific needs and objectives.</p>
+                        <p>Whether you're a startup looking to incorporate, an established business seeking tax optimization, or an enterprise requiring comprehensive financial advisory, MD Fin Associates is your trusted partner for sustainable growth and financial success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl md:text-5xl font-black text-primary text-center mb-12 tracking-tight">Why Choose Us</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                        <div class="w-16 h-16 bg-gradient-to-br from-secondary via-secondary/80 to-accent rounded-xl flex items-center justify-center mb-4 shadow-lg">
+                            <i data-lucide="check-circle" class="text-primary" size="32"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Expert Tax Solutions</h3>
+                        <p class="text-gray-600 leading-relaxed text-justify">Comprehensive tax planning and filing services tailored to your business needs.</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                        <div class="w-16 h-16 bg-gradient-to-br from-secondary via-secondary/80 to-accent rounded-xl flex items-center justify-center mb-4 shadow-lg">
+                            <i data-lucide="check-circle" class="text-primary" size="32"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Business Registration</h3>
+                        <p class="text-gray-600 leading-relaxed text-justify">Seamless company incorporation and registration services for startups and enterprises.</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                        <div class="w-16 h-16 bg-gradient-to-br from-secondary via-secondary/80 to-accent rounded-xl flex items-center justify-center mb-4 shadow-lg">
+                            <i data-lucide="check-circle" class="text-primary" size="32"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">GST Compliance</h3>
+                        <p class="text-gray-600 leading-relaxed text-justify">Complete GST consultancy ensuring full compliance with government regulations.</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                        <div class="w-16 h-16 bg-gradient-to-br from-secondary via-secondary/80 to-accent rounded-xl flex items-center justify-center mb-4 shadow-lg">
+                            <i data-lucide="check-circle" class="text-primary" size="32"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Financial Advisory</h3>
+                        <p class="text-gray-600 leading-relaxed text-justify">Strategic financial planning and advisory services to drive business growth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 relative bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1920')">
+            <div class="absolute inset-0 bg-primary/90"></div>
+            <div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-8 italic max-w-4xl mx-auto leading-relaxed">
+                    "Empowering your financial success with expert tax solutions and strategic guidance."
+                </h2>
+                <a href="contact.html" class="group inline-flex items-center justify-center space-x-3 bg-gradient-to-br from-secondary to-accent text-primary px-8 py-4 rounded-xl font-black text-lg shadow-xl hover:shadow-secondary/50 transition-all duration-300 transform hover:scale-105 active:scale-95 border-2 border-white/20">
+                    <span>Get Started Today</span>
+                    <i data-lucide="arrow-right" class="group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-b from-primary to-[#051224] text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="/Companylogo.jpeg" alt="Company Logo" class="w-12 h-12 rounded-lg shadow-lg">
+                        <div>
+                            <h3 class="font-black text-lg tracking-tight">MD FIN Associates</h3>
+                            <p class="text-secondary text-xs font-semibold">Financial Solutions</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                        Simplifying finance and empowering growth with over 15 years of trusted expertise in tax consultancy and business solutions.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300 transform hover:scale-110">
+                            <i data-lucide="linkedin" class="w-5 h-5 text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300 transform hover:scale-110">
+                            <i data-lucide="facebook" class="w-5 h-5 text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300 transform hover:scale-110">
+                            <i data-lucide="twitter" class="w-5 h-5 text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300 transform hover:scale-110">
+                            <i data-lucide="instagram" class="w-5 h-5 text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-secondary font-bold text-lg mb-4 pb-2 border-b border-white/20">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-secondary transition-colors duration-300 text-sm">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-secondary transition-colors duration-300 text-sm">About</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-secondary transition-colors duration-300 text-sm">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-secondary transition-colors duration-300 text-sm">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-secondary font-bold text-lg mb-4 pb-2 border-b border-white/20">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300 text-sm">Accounting Services</li>
+                        <li class="text-gray-300 text-sm">GST Consultancy</li>
+                        <li class="text-gray-300 text-sm">Income Tax Filing</li>
+                        <li class="text-gray-300 text-sm">Company Incorporation</li>
+                        <li class="text-gray-300 text-sm">Insurance Consulting</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-secondary font-bold text-lg mb-4 pb-2 border-b border-white/20">Contact Info</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start space-x-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-secondary mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-300 text-sm">
+                                Blossom Enclave, Chetty Street Main Road,<br>
+                                Mel Ayanyambakkam, Chennai
+                            </span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-secondary flex-shrink-0"></i>
+                            <div class="text-gray-300 text-sm">
+                                <div>9962606557</div>
+                                <div>9176321339</div>
+                            </div>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="mail" class="w-5 h-5 text-secondary flex-shrink-0"></i>
+                            <a href="mailto:mdfinassociates@gmail.com" class="text-gray-300 hover:text-secondary text-sm transition-colors duration-300">
+                                mdfinassociates@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary/30 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <p class="text-gray-400 text-sm text-center md:text-left">
+                        &copy; <span id="current-year"></span> MD FIN Associates. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-secondary text-sm transition-colors duration-300">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-secondary text-sm transition-colors duration-300">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="fixed bottom-8 right-8 z-50 bg-gradient-to-br from-secondary to-accent text-primary p-3 rounded-full shadow-2xl hover:shadow-secondary/50 transition-all duration-300 transform scale-0 border-2 border-primary/10" aria-label="Back to top">
+        <i data-lucide="chevron-up" class="w-6 h-6 font-bold"></i>
+    </button>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919962606557" target="_blank" rel="noopener noreferrer" class="fixed bottom-8 left-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:shadow-[#25D366]/50 transition-all duration-300 transform hover:scale-110 group border-4 border-white" aria-label="Chat on WhatsApp">
+        <i data-lucide="message-circle" class="w-8 h-8 fill-white text-white"></i>
+        <span class="absolute left-full ml-4 bg-white text-primary px-4 py-2 rounded-lg text-sm font-bold shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+            Chat with us
+        </span>
+    </a>
+
+    <!-- Scripts -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        const backToTop = document.getElementById('back-to-top');
+        const heroContent = document.getElementById('hero-content');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-primary', 'shadow-2xl', 'py-3');
+                navbar.classList.remove('bg-gradient-to-b', 'from-primary', 'to-transparent', 'py-5');
+            } else {
+                navbar.classList.remove('bg-primary', 'shadow-2xl', 'py-3');
+                navbar.classList.add('bg-gradient-to-b', 'from-primary', 'to-transparent', 'py-5');
+            }
+
+            if (window.scrollY > 400) {
+                backToTop.classList.remove('scale-0');
+                backToTop.classList.add('scale-100');
+            } else {
+                backToTop.classList.remove('scale-100');
+                backToTop.classList.add('scale-0');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuIcon = mobileMenuBtn.querySelector('i');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const isHidden = mobileMenu.classList.contains('hidden');
+            mobileMenuIcon.setAttribute('data-lucide', isHidden ? 'menu' : 'x');
+            lucide.createIcons();
+        });
+
+        // Back to Top
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Current Year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Hero Animation
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                heroContent.classList.remove('translate-y-10', 'opacity-0');
+                heroContent.classList.add('translate-y-0', 'opacity-100');
+            }, 100);
+        });
+    </script>
+</body>
+</html>
